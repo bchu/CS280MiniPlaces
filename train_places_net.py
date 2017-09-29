@@ -68,6 +68,7 @@ def to_tempfile(file_content):
        and return its filename."""
     with tempfile.NamedTemporaryFile(delete=False) as f:
         f.write(file_content)
+        print(f.name)
         return f.name
 
 weight_param = dict(lr_mult=1, decay_mult=1)

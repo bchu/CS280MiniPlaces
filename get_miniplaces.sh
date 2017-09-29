@@ -18,5 +18,5 @@ fi
 pushd development_kit/data
 cp val.txt test.txt
 sed -i 's/^val/test/' test.txt
-sed -i 's/ .*$//' test.txt
+sed -i 's/ .*$/ 0/' test.txt
 popd

@@ -1,0 +1,42 @@
+net: ""
+test_iter: 0
+test_interval: 500000
+base_lr: 0.0001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 200000
+display: 100
+max_iter: 400000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 500000
+snapshot_prefix: ""
+solver_mode: GPU
+
+# Original CaffeNet:
+# test_iter: 1000
+# test_interval: 1000
+# base_lr: 0.01
+# lr_policy: "step"
+# gamma: 0.1
+# stepsize: 100000
+# display: 20
+# max_iter: 450000
+# momentum: 0.9
+# weight_decay: 0.0005
+# snapshot: 10000
+
+# Original Flickr finetune
+# test_iter: 100
+# test_interval: 1000
+# # lr for fine-tuning should be lower than when starting from scratch
+# base_lr: 0.001
+# lr_policy: "step"
+# gamma: 0.1
+# # stepsize should also be lower, as we're closer to being done
+# stepsize: 20000
+# display: 20
+# max_iter: 100000
+# momentum: 0.9
+# weight_decay: 0.0005
+# snapshot: 10000

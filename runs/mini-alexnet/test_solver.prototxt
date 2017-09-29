@@ -1,0 +1,14 @@
+test_iter: 40
+test_interval: 6000000
+base_lr: 0.0001
+display: 6000000
+max_iter: 6000000
+lr_policy: "step"
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+stepsize: 6000000
+snapshot: 6000000
+solver_mode: GPU
+net: "/home/bchu/CS280MiniPlaces/runs/mini-alexnet/test.prototxt"
+average_loss: 1
